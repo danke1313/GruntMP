@@ -1,8 +1,8 @@
 
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
-SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\GRUNTMP"
-SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
-SetVariable h3maps "E:\Halo Resources\Halo3"
+SetVariable workingdir ""
+SetVariable modsfolder ""
+SetVariable h3maps ""
 
 openmodpackage workingdir\paks\gruntmp.pak
 
