@@ -1,0 +1,36 @@
+
+D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\GRUNTMP"
+SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
+SetVariable h3maps "E:\Halo Resources\Halo3"
+
+openmodpackage workingdir\paks\gruntmp.pak
+
+Updatedescription	
+GruntMP
+FOR THE FOOD NIPPLE
+AMP
+0.1
+Mainmenu Multiplayer Character
+
+opencachefile "h3maps\010_jungle.map"
+porttag replace objects\characters\grunt\shaders\grunt_skin.shader
+exit
+
+edittag objects\characters\masterchief\mp_masterchief\fp\fp.render_model
+setfield Materials[0].RenderMethod objects\characters\grunt\shaders\grunt_skin.shader
+savetagchanges
+exit
+
+EditTag objects\characters\masterchief\masterchief.model_animation_graph
+FixGraphForInheritance
+SaveTagChanges
+Exit
+EditTag objects\characters\grunt\grunt.model_animation_graph
+SetInheritance MCC objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
+SortModes
+SaveTagChanges
+Exit
+
+SaveModPackage "modsfolder\GRUNTMP.pak"
+
